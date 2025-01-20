@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000"
+        motion:autoTransition="animateToEnd">
+       <KeyFrameSet>
+       </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/SplashScreen_logo2"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="162dp"
+            android:layout_height="162dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:scaleX="0"
+            android:scaleY="0" />
+        <Constraint
+            android:id="@+id/SplashScreen_logo"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/SplashScreen_background"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="162dp"
+            android:layout_height="162dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:scaleX="0"
+            android:scaleY="0" />
+        <Constraint
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_editor_absoluteY="561dp"
+            motion:layout_editor_absoluteX="57dp"
+            android:id="@+id/SplashScreen_text"
+            motion:layout_constraintTop_toBottomOf="@+id/SplashScreen_logo"
+            android:layout_marginTop="68dp"
+            android:scaleX="0" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/SplashScreen_background"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="99dp"
+            android:layout_height="99dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:scaleX="20"
+            android:scaleY="20" />
+        <Constraint
+            android:id="@+id/SplashScreen_logo"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="162dp"
+            android:layout_height="162dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/SplashScreen_text"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/SplashScreen_logo"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:scaleX="1" />
+    </ConstraintSet>
+</MotionScene>

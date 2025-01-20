@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateQuestionFragment">
+
+    <EditText
+        android:id="@+id/CreateQuestion_EnterQuestion"
+        android:layout_width="381dp"
+        android:layout_height="163dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/background_edittext"
+        android:gravity="top"
+        android:hint="Enter your Question"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/CreateQuestion_AskQuestion"
+        android:layout_width="191dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="56dp"
+        android:text="Post"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/forest_yellow"
+        android:fontFamily="@font/noto_serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CreateQuestion_EnterQuestion" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

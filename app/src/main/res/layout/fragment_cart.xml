@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CartFragment">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <Button
+           android:id="@+id/Cart_CurrentOrders"
+           android:layout_width="186dp"
+           android:layout_height="60dp"
+           android:layout_marginStart="16dp"
+           android:layout_marginTop="32dp"
+           android:layout_marginEnd="32dp"
+           android:backgroundTint="@color/forest_yellow"
+           android:fontFamily="@font/noto_serif_bold"
+           android:text="Your Order"
+           android:textAllCaps="false"
+           android:textColor="@color/black"
+           android:textSize="18sp"
+           app:layout_constraintEnd_toStartOf="@+id/Cart_PreviousOrders"
+           app:layout_constraintHorizontal_bias="0.0"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent" />
+
+       <Button
+           android:id="@+id/Cart_PreviousOrders"
+           android:layout_width="186dp"
+           android:layout_height="60dp"
+           android:layout_marginTop="32dp"
+           android:layout_marginEnd="16dp"
+           android:backgroundTint="@color/forest_yellow"
+           android:fontFamily="@font/noto_serif_bold"
+           android:text="Previous Order"
+           android:textAllCaps="false"
+           android:textColor="@color/black"
+           android:textSize="15sp"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintTop_toTopOf="parent" />
+
+       <TextView
+           android:id="@+id/Cart_Title"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="16dp"
+           android:layout_marginTop="12dp"
+           android:fontFamily="@font/inter"
+           android:text="Current Orders"
+           android:textColor="@color/black"
+           android:textSize="18sp"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/Cart_CurrentOrders" />
+
+       <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/Cart_ProductList"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="100dp"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.0"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/Cart_Title"
+           app:layout_constraintVertical_bias="0.0" />
+
+       <Button
+           android:id="@+id/Cart_BuyorRentItems"
+           android:layout_width="354dp"
+           android:layout_height="50dp"
+           android:layout_marginStart="28dp"
+           android:layout_marginTop="12dp"
+           android:backgroundTint="@color/forest_yellow"
+           android:fontFamily="@font/noto_serif_bold"
+           android:text="Buy or Rent Product"
+           android:textAllCaps="false"
+           android:textColor="@color/black"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/Cart_ProductList" />
+
+       <LinearLayout
+           android:id="@+id/Cart_Paymentmethod"
+           android:layout_width="412dp"
+           android:layout_height="425dp"
+           android:layout_marginTop="16dp"
+           android:layout_marginBottom="100dp"
+           android:visibility="gone"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.0"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/Cart_BuyorRentItems"
+           app:layout_constraintVertical_bias="0.0">
+
+           <include layout="@layout/payment_method_view" />
+       </LinearLayout>
+
+       <TextView
+           android:id="@+id/Cart_TotalPrice"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="12dp"
+           android:fontFamily="@font/inter_bold"
+           android:text="TextView"
+           android:textColor="@color/dark_green"
+           android:textSize="16sp"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.924"
+           app:layout_constraintStart_toEndOf="@+id/Cart_Title"
+           app:layout_constraintTop_toBottomOf="@+id/Cart_PreviousOrders" />
+   </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

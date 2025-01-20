@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/QuerysHistory"
+        android:icon="@drawable/house"
+        android:title="History"
+        android:iconTint="@color/white"/>
+    <item
+        android:id="@+id/Querys"
+        android:title="Querys"
+        android:icon="@drawable/comments"
+        android:iconTint="@color/white"/>
+</menu>

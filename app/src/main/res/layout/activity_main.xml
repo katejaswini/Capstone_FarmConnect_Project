@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:fontFamily="@font/noto_serif_bold"
+        android:text="FarmConnect"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.896"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.125" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="91dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="92dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/Farmer_Login"
+        android:layout_width="292dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="124dp"
+        android:background="@drawable/login_button"
+        android:fontFamily="@font/noto_serif"
+        android:gravity="center"
+        android:onClick="farmerlogin"
+        android:textColor="@color/black"
+        android:text="Farmer"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/Vendor_login"
+        android:layout_width="292dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/login_button"
+        android:fontFamily="@font/noto_serif"
+        android:gravity="center"
+        android:text="Vendor"
+        android:textColor="@color/black"
+        android:onClick="vendorlogin"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Farmer_Login" />
+
+    <TextView
+        android:id="@+id/Researcher_login"
+        android:layout_width="292dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/login_button"
+        android:fontFamily="@font/noto_serif"
+        android:gravity="center"
+        android:text="Research"
+        android:onClick="reasearchlogin"
+        android:textSize="40sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Vendor_login" />
+
+    <TextView
+        android:id="@+id/Register_Person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/register_string"
+        android:onClick="registerperson"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Researcher_login" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

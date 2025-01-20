@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BuyProductFragment">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="100dp">
+
+    <Button
+        android:id="@+id/BuyProduct_BuyorRentButton"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_width="354dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/forest_yellow"
+        android:fontFamily="@font/noto_serif_bold"
+        android:text="Buy or Rent"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BuyProduct_PaymentMethod"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/BuyProduct_RentTime"
+        android:layout_width="252dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/grey"
+        android:fontFamily="@font/inter_bold"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/BuyProduct_RentTimeLabel"
+        app:layout_constraintTop_toBottomOf="@+id/BuyProduct_TotalPrice" />
+
+    <TextView
+        android:id="@+id/BuyProduct_RentTimeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Last Day"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BuyProduct_PriceLabel" />
+
+    <TextView
+        android:id="@+id/BuyProduct_TotalPrice"
+        android:layout_width="277dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/grey"
+        android:fontFamily="@font/inter_bold"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/BuyProduct_PriceLabel"
+        app:layout_constraintTop_toBottomOf="@+id/BuyProduct_TotalQuantity" />
+
+    <TextView
+        android:id="@+id/BuyProduct_PriceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Price"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BuyProduct_QuantityLabel" />
+
+    <ImageButton
+        android:id="@+id/BuyProduct_SubtractQuantity"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_button"
+        android:src="@drawable/minus"
+        app:layout_constraintStart_toEndOf="@+id/BuyProduct_TotalQuantity"
+        app:layout_constraintTop_toBottomOf="@+id/BuyProduct_Image"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/BuyProduct_QuantityLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Quantity"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BuyProduct_Image" />
+
+    <TextView
+        android:id="@+id/BuyProduct_ProductTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Title"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/BuyProduct_Image"
+        android:layout_width="371dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BuyProduct_ProductTitle" />
+
+    <ImageButton
+        android:id="@+id/BuyProduct_AddQuantity"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_button"
+        android:src="@drawable/baseline_add_24"
+        app:layout_constraintStart_toEndOf="@+id/BuyProduct_QuantityLabel"
+        app:layout_constraintTop_toBottomOf="@+id/BuyProduct_Image" />
+
+    <TextView
+        android:id="@+id/BuyProduct_TotalQuantity"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/grey"
+        android:fontFamily="@font/inter_bold"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/BuyProduct_AddQuantity"
+        app:layout_constraintTop_toBottomOf="@+id/BuyProduct_Image" />
+
+    <Button
+        android:id="@+id/BuyProduct_AddtoCart"
+        android:layout_width="354dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/forest_yellow"
+        android:fontFamily="@font/noto_serif_bold"
+        android:text="Add to Cart"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BuyProduct_RentTime" />
+
+
+    <LinearLayout
+        android:id="@+id/BuyProduct_PaymentMethod"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BuyProduct_AddtoCart">
+
+        <include layout="@layout/payment_method_view"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

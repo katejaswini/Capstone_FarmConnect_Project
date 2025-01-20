@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <EditText
+        android:id="@+id/QuestionDetails_Comment"
+        android:layout_width="381dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_edittext"
+        android:fontFamily="@font/inter"
+        android:hint="Comment"
+        android:inputType="textMultiLine"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/QuestionDetails_RepliesLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Replies"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/QuestionDetails_Comment" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/QuestionDetails_CommentList"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/QuestionDetails_RepliesLabel"
+        app:layout_constraintVertical_bias="0.0"
+        tools:listitem="@layout/comment_view" />
+
+    <ImageButton
+        android:id="@+id/QuestionDetails_SendComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/paper_plane"
+        app:layout_constraintBottom_toBottomOf="@+id/QuestionDetails_Comment"
+        app:layout_constraintEnd_toEndOf="@+id/QuestionDetails_Comment"
+        app:layout_constraintTop_toTopOf="@+id/QuestionDetails_Comment" />
+</androidx.constraintlayout.widget.ConstraintLayout>

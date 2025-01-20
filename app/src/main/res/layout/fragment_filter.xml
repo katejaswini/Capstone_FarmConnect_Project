@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FilterFragment">
+
+    <SeekBar
+        android:id="@+id/Filter_ProductLocation_Seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:max="1000"
+        android:progress="1000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_bold"
+        android:text="Location Range"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.017"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Filter_Inital_Price" />
+
+    <TextView
+        android:id="@+id/Filter_ProductLocationMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="12dp"
+        android:gravity="center"
+        android:text="1000"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Filter_ProductLocation_Seekbar" />
+
+    <TextView
+        android:id="@+id/filter_Inital_Price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Filter_ProductLocation_Seekbar" />
+
+    <CheckBox
+        android:id="@+id/Filter_Seeds_Checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_marginTop="52dp"
+        android:button="@null"
+        android:drawableStart="@drawable/custom_checkbox"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/inter_bold"
+        android:padding="10dp"
+        android:text="Seeds"
+        android:checked="true"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/Filter_Machine_CheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_marginTop="4dp"
+        android:button="@null"
+        android:drawableStart="@drawable/custom_checkbox"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/inter_bold"
+        android:padding="10dp"
+        android:text="Machine"
+        android:checked="true"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Filter_Seeds_Checkbox" />
+
+    <CheckBox
+        android:id="@+id/Filter_Plant_Care_CheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_marginTop="8dp"
+        android:button="@null"
+        android:drawableStart="@drawable/custom_checkbox"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/inter_bold"
+        android:padding="10dp"
+        android:text="Plant Care"
+        android:textSize="20dp"
+        android:checked="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Filter_Machine_CheckBox" />
+
+    <CheckBox
+        android:id="@+id/Filter_Produce_Checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_marginTop="4dp"
+        android:button="@null"
+        android:drawableStart="@drawable/custom_checkbox"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/inter_bold"
+        android:padding="10dp"
+        android:text="Produce"
+        android:textSize="20dp"
+        android:checked="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Filter_Plant_Care_CheckBox" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Categories"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Price Range"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.017"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Filter_Produce_Checkbox" />
+
+    <SeekBar
+        android:id="@+id/Filter_ProductPrice_Seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/Filter_Inital_Price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="0"
+        android:gravity="center"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Filter_ProductPrice_Seekbar" />
+
+    <TextView
+        android:id="@+id/Filter_ProductPriceMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:text="0"
+        android:gravity="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Filter_ProductPrice_Seekbar" />
+
+    <Button
+        android:id="@+id/Filter_Confirm_Filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="@color/dark_green"
+        android:text="Filter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Filter_ProductLocationMax" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

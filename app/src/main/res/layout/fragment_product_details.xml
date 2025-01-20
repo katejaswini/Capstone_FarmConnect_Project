@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductDetailsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp">
+
+
+        <Button
+            android:id="@+id/ProductDetails_BuyRentProduct_Button"
+            android:layout_width="354dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/forest_yellow"
+            android:fontFamily="@font/noto_serif_bold"
+            android:text="Buy/Rent Product"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ProductDetails_AddtoCart_Button" />
+
+        <TextView
+            android:id="@+id/ProductDetails_DurationLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="11dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="Duration"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ProductDetails_BuyorRentLabel" />
+
+        <TextView
+            android:id="@+id/ProductDetails_Duration"
+            android:layout_width="247dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/noto_serif"
+            android:text="Duration"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/ProductDetails_DurationLabel"
+            app:layout_constraintTop_toBottomOf="@+id/ProductDetails_BuyorRent" />
+
+        <TextView
+            android:id="@+id/ProductDetails_Measure"
+            android:layout_width="247dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/noto_serif"
+            android:text="Measure"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/ProductDetails_MeasureLabel"
+            app:layout_constraintTop_toBottomOf="@+id/ProductDetails_Price" />
+
+        <TextView
+            android:id="@+id/ProductDetails_MeasureLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="56dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="Measure"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ProductDetails_InStockLabel" />
+
+        <TextView
+            android:id="@+id/ProductDetails_DeliveryMethod"
+            android:layout_width="247dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/noto_serif"
+            android:text="Delivery Method"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/ProductDetails_DeliveryMethodLabel"
+            app:layout_constraintTop_toBottomOf="@+id/ProductDetails_Duration" />
+
+        <TextView
+            android:id="@+id/ProductDetails_DeliveryMethodLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="Delivery \n Method"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ProductDetails_DurationLabel" />
+
+        <TextView
+            android:id="@+id/ProductDetails_Price"
+            android:layout_width="247dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/noto_serif"
+            android:text="Price"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/ProductDetails_PriceLabel"
+            app:layout_constraintTop_toBottomOf="@+id/ProductDetails_InStock" />
+
+        <TextView
+            android:id="@+id/ProductDetails_PriceLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="Price"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ProductDetails_InStockLabel" />
+
+        <TextView
+            android:id="@+id/ProductDetails_InStock"
+            android:layout_width="247dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/noto_serif"
+            android:text="In Stock"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/ProductDetails_InStockLabel"
+            app:layout_constraintTop_toBottomOf="@+id/ProductDetails_Location" />
+
+        <TextView
+            android:id="@+id/ProductDetails_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="Title"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.081"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ProductDetails_Image"
+            android:layout_width="371dp"
+            android:layout_height="240dp"
+            android:layout_marginTop="24dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ProductDetails_Title" />
+
+        <TextView
+            android:id="@+id/ProductDetails_Description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="Description"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ProductDetails_Image" />
+
+        <TextView
+            android:id="@+id/ProductDetails_LocationLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="Location"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ProductDetails_Description" />
+
+        <TextView
+            android:id="@+id/ProductDetails_Location"
+            android:layout_width="247dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/noto_serif"
+            android:text="Location"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toEndOf="@+id/ProductDetails_LocationLabel"
+            app:layout_constraintTop_toBottomOf="@+id/ProductDetails_Description" />
+
+        <TextView
+            android:id="@+id/ProductDetails_InStockLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="Stock"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ProductDetails_Location" />
+
+        <TextView
+            android:id="@+id/ProductDetails_BuyorRent"
+            android:layout_width="247dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/noto_serif"
+            android:text="Buy/Rent"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/ProductDetails_BuyorRentLabel"
+            app:layout_constraintTop_toBottomOf="@+id/ProductDetails_Measure" />
+
+        <TextView
+            android:id="@+id/ProductDetails_BuyorRentLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="Buy/Rent"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ProductDetails_MeasureLabel" />
+
+        <TextView
+            android:id="@+id/ProductDetails_FeaturesLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="Features"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ProductDetails_DeliveryMethodLabel" />
+
+        <TextView
+            android:id="@+id/ProductDetails_Features"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:padding="5dp"
+            android:fontFamily="@font/noto_serif_bold"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ProductDetails_FeaturesLabel" />
+
+        <Button
+            android:id="@+id/ProductDetails_AddtoCart_Button"
+            android:layout_width="354dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/forest_yellow"
+            android:fontFamily="@font/noto_serif_bold"
+            android:text="Add to Cart"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ProductDetails_Features" />
+
+        <Button
+            android:id="@+id/ProductDetails_DeleteProduct"
+            android:layout_width="354dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/forest_yellow"
+            android:fontFamily="@font/noto_serif_bold"
+            android:text="Delete Product"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ProductDetails_BuyRentProduct_Button" />
+
+        <RatingBar
+            android:id="@+id/ProductDetails_Rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:numStars="5"
+            android:rating="0"
+            android:stepSize="0.5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.906"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ProductDetails_BuyRentProduct_Button" />
+
+        <LinearLayout
+            android:id="@+id/ProductDetails_CommentArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/ProductDetails_Rating">
+            <include layout="@layout/comment_layout" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
